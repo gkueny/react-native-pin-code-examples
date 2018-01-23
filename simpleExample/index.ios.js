@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   KeyboardAvoidingView,
   AppRegistry,
@@ -8,9 +8,9 @@ import {
   View
 } from 'react-native';
 
-import CodePin from './pin-code/pin-code';
+import CodePin from 'react-native-pin-code';
 
-const { height, width } = Dimensions.get('window');
+const {height, width} = Dimensions.get('window');
 
 export default class simpleExample extends Component {
   constructor() {
@@ -34,18 +34,12 @@ export default class simpleExample extends Component {
   render() {
     return (
       <View style={styles.container}>
-
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-          Press Cmd+R to reload,
-          Cmd+D or shake for dev menu
+          To get started, edit index.ios.js Press Cmd+R to reload, Cmd+D or
+          shake for dev menu
         </Text>
-        <Text style={styles.instructions}>
-          {this.state.success}
-        </Text>
+        <Text style={styles.instructions}>{this.state.success}</Text>
 
         <KeyboardAvoidingView
           behavior={'position'}
@@ -58,7 +52,6 @@ export default class simpleExample extends Component {
             success={this.onSuccess}
           />
         </KeyboardAvoidingView>
-
       </View>
     );
   }
