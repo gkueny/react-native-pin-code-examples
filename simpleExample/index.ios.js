@@ -23,8 +23,6 @@ export default class simpleExample extends Component {
   }
 
   onSuccess = () => {
-    this.ref.focus(1);
-
     this.setState({
       displayCodePin: false,
       success: 'A success message :)'

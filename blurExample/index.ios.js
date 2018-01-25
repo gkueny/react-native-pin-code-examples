@@ -24,8 +24,6 @@ export default class blurExample extends Component {
   }
 
   onSuccess = () => {
-    this.ref.clean();
-
     this.setState({
       displayCodePin: false,
       success: 'Okeyyyyy !'
