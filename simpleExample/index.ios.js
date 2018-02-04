@@ -46,7 +46,11 @@ export default class simpleExample extends Component {
         >
           <CodePin
             ref={ref => (this.ref = ref)}
-            code="CODE"
+            obfuscation
+            autoFocusFirst={false}
+            code="fake_code"
+            number={5}
+            checkPinCode={(code, callback) => callback(code === 'CODES')}
             success={this.onSuccess}
           />
         </KeyboardAvoidingView>
