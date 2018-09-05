@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import {
   KeyboardAvoidingView,
-  AppRegistry,
   StyleSheet,
   Dimensions,
   Text,
   View
 } from 'react-native';
 
-import CodePin from 'react-native-pin-code';
+import CodePin from './CodePin';
 
 const {height, width} = Dimensions.get('window');
 
@@ -95,5 +94,3 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   }
 });
-
-AppRegistry.registerComponent('simpleExample', () => simpleExample);

@@ -1,21 +1,17 @@
 {
-  "name": "simpleExample",
-  "version": "0.0.1",
+  "name": "simple-example",
+  "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
   },
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "react": "~16.2.0",
-    "react-native": "^0.56.0",
-    "react-native-pin-code": "git://github.com/gkueny/react-native-pin-code"
-  },
-  "devDependencies": {
-    "babel-jest": "19.0.0",
-    "babel-preset-react-native": "1.9.1"
-  },
-  "jest": {
-    "preset": "react-native"
+    "expo": "^29.0.0",
+    "react": "16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-29.0.0.tar.gz",
+    "react-native-pin-code": "^0.5.0"
   }
 }
