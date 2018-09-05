@@ -46,7 +46,7 @@ export default class simpleExample extends Component {
           <CodePin
             ref={ref => (this.ref = ref)}
             obfuscation
-            autoFocusFirst={false}
+            autoFocusFirst
             code="fake_code"
             number={5}
             checkPinCode={(code, callback) => callback(code === 'CODES')}
