@@ -10,7 +10,7 @@
     "prop-types": "^15.5.10",
     "react": "~16.2.0",
     "react-native": "~0.52",
-    "react-native-pin-code": "git://github.com/gkueny/react-native-pin-code",
+    "react-native-pin-code": "^0.3.0",
     "react-native-blur": "^3.2.2"
   },
   "devDependencies": {
