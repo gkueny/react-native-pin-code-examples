@@ -7,7 +7,7 @@ import {
   View
 } from 'react-native';
 
-import CodePin from './CodePin';
+import CodePin from 'react-native-pin-code';
 
 const {height, width} = Dimensions.get('window');
 
