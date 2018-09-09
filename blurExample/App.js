@@ -9,7 +9,6 @@ import {
 } from 'react-native';
 
 import CodePin from 'react-native-pin-code';
-const {BlurView} = require('react-native-blur');
 
 const {height, width} = Dimensions.get('window');
 
@@ -36,26 +35,24 @@ export default class blurExample extends Component {
         <Text style={styles.success}>{this.state.success}</Text>
 
         {this.state.displayCodePin ? (
-          <BlurView blurType="dark" blurAmount={10} style={styles.blur}>
-            <KeyboardAvoidingView
-              behavior={'position'}
-              contentContainerStyle={styles.avoidingView}
-            >
-              <CodePin
-                ref={ref => (this.ref = ref)}
-                code="290317"
-                number={6}
-                success={this.onSuccess}
-                containerStyle={styles.containerCodePin}
-                pinStyle={styles.pinStyle}
-                textStyle={{fontSize: 12}}
-                text={'Protected area'}
-                errorStyle={{fontSize: 10}}
-                error={'Look at the code ;)'}
-                keyboardType="numeric"
-              />
-            </KeyboardAvoidingView>
-          </BlurView>
+          <KeyboardAvoidingView
+            behavior={'position'}
+            contentContainerStyle={styles.avoidingView}
+          >
+            <CodePin
+              ref={ref => (this.ref = ref)}
+              code="290317"
+              number={6}
+              success={this.onSuccess}
+              containerStyle={styles.containerCodePin}
+              pinStyle={styles.pinStyle}
+              textStyle={{fontSize: 12}}
+              text={'Protected area'}
+              errorStyle={{fontSize: 10}}
+              error={'Look at the code ;)'}
+              keyboardType="numeric"
+            />
+          </KeyboardAvoidingView>
         ) : null}
       </View>
     );
@@ -96,5 +93,3 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   }
 });
-
-AppRegistry.registerComponent('blurExample', () => blurExample);
